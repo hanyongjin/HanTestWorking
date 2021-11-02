@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1ABA9B0CB0C74869B464D347 /* Pods_HanTestWorking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E210122BF3460860B6BFEF /* Pods_HanTestWorking_Tests.framework */; };
 		218F35D47D948D7497F778F2 /* Pods_HanTestWorking_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC337D3717A36AE85F8A172C /* Pods_HanTestWorking_Example.framework */; };
+		33E264F2273120CB00D408CD /* HRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E264F1273120CB00D408CD /* HRead.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,7 +39,9 @@
 
 /* Begin PBXFileReference section */
 		1A03A8E5CA733F30999C44BC /* Pods-HanTestWorking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanTestWorking_Example.release.xcconfig"; path = "Target Support Files/Pods-HanTestWorking_Example/Pods-HanTestWorking_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3402883555C14FCEFB4E801D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		33E264F0273120CB00D408CD /* HRead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HRead.h; path = ../HanTestWorking/Classes/HRead.h; sourceTree = "<group>"; };
+		33E264F1273120CB00D408CD /* HRead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HRead.m; path = ../HanTestWorking/Classes/HRead.m; sourceTree = "<group>"; };
+		3402883555C14FCEFB4E801D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3E3309553C506C4D45203CC8 /* Pods-HanTestWorking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanTestWorking_Tests.release.xcconfig"; path = "Target Support Files/Pods-HanTestWorking_Tests/Pods-HanTestWorking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HanTestWorking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanTestWorking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +67,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C9D0CAF074C2512C91B5A52 /* Pods-HanTestWorking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanTestWorking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HanTestWorking_Tests/Pods-HanTestWorking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99C8CF1FD492AA8FA87E48D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C9F0583C788394EF808FA1EB /* HanTestWorking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HanTestWorking.podspec; path = ../HanTestWorking.podspec; sourceTree = "<group>"; };
+		99C8CF1FD492AA8FA87E48D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C9F0583C788394EF808FA1EB /* HanTestWorking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HanTestWorking.podspec; path = ../HanTestWorking.podspec; sourceTree = "<group>"; };
 		DC337D3717A36AE85F8A172C /* Pods_HanTestWorking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanTestWorking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +101,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				33E264F0273120CB00D408CD /* HRead.h */,
+				33E264F1273120CB00D408CD /* HRead.m */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for HanTestWorking */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -193,7 +198,6 @@
 				7C9D0CAF074C2512C91B5A52 /* Pods-HanTestWorking_Tests.debug.xcconfig */,
 				3E3309553C506C4D45203CC8 /* Pods-HanTestWorking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +263,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -343,10 +348,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HanTestWorking_Example/Pods-HanTestWorking_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/HanTestWorking/HanTestWorking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HanTestWorking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +392,7 @@
 			files = (
 				6003F59E195388D20070C39A /* HAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HViewController.m in Sources */,
+				33E264F2273120CB00D408CD /* HRead.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
